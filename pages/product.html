@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>جزئیات محصول | بازارینو</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+
+        /* =========================
+           PRODUCT PAGE
+        ========================= */
+
+        .product-page {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+
+        .back-btn {
+            display: inline-block;
+
+            margin-bottom: 20px;
+
+            color: #e91e63;
+
+            text-decoration: none;
+
+            font-size: 14px;
+        }
+
+
+        .product-details {
+            background: white;
+
+            border-radius: 20px;
+
+            padding: 30px;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 50px;
+
+            box-shadow:
+                0 5px 25px rgba(0, 0, 0, 0.06);
+        }
+
+
+        /* Product image */
+
+        .product-details-image {
+
+            min-height: 450px;
+
+            background: #f7f7f7;
+
+            border-radius: 15px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+        }
+
+
+        .product-details-image img {
+
+            width: 80%;
+
+            height: 400px;
+
+            object-fit: contain;
+
+        }
+
+
+        /* Product information */
+
+        .product-details-info {
+
+            padding: 20px;
+
+        }
+
+
+        .details-category {
+
+            color: #888;
+
+            font-size: 14px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .product-details-info h1 {
+
+            font-size: 28px;
+
+            line-height: 1.8;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .details-rating {
+
+            color: #f5a623;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .details-description {
+
+            color: #666;
+
+            line-height: 2;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .details-price {
+
+            font-size: 27px;
+
+            font-weight: 800;
+
+            color: #e91e63;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        /* Quantity */
+
+        .quantity-box {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .quantity-box button {
+
+            width: 40px;
+
+            height: 40px;
+
+            border: 1px solid #ddd;
+
+            background: white;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            font-size: 20px;
+
+        }
+
+
+        #quantity {
+
+            font-size: 18px;
+
+            font-weight: bold;
+
+            min-width: 25px;
+
+            text-align: center;
+
+        }
+
+
+        /* Add to cart */
+
+        .details-add-cart {
+
+            width: 100%;
+
+            padding: 15px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background: #e91e63;
+
+            color: white;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            transition: 0.2s;
+
+        }
+
+
+        .details-add-cart:hover {
+
+            background: #d81b60;
+
+        }
+
+
+        /* Responsive */
+
+        @media (max-width: 700px) {
+
+            .product-details {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .product-details-image {
+
+                min-height: 300px;
+
+            }
+
+
+            .product-details-image img {
+
+                height: 280px;
+
+            }
+
+
+            .product-details-info h1 {
+
+                font-size: 22px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="header-top">
+
+
+            <a
+                href="../index.html"
+                class="logo"
+            >
+                بازارینو
+            </a>
+
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    placeholder="جستجوی محصولات..."
+                >
+                <button>
+                    🔍
+                </button>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button class="icon-btn">
+                    🌙
+                </button>
+
+
+                <button class="login-btn">
+                    ورود | ثبت‌نام
+                </button>
+
+
+                <a href="cart.html">
+
+                    <button class="cart-btn">
+
+                        🛒
+
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Main -->
+
+    <main class="product-page">
+
+
+        <a
+            href="../index.html"
+            class="back-btn"
+        >
+            ← بازگشت به فروشگاه
+        </a>
+
+
+
+        <section
+            id="productDetails"
+            class="product-details"
+        >
+
+            <!-- اطلاعات محصول با JavaScript اینجا قرار می‌گیرد -->
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="../script.js"></script>
+
+    <script src="../product.js"></script>
+
+
+</body>
+
+</html>
